@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bg.ittalents.mybazar.RegisterActivity">
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:hint="Enter Username"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/reg_password2"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/role_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/role_client"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Client"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/role_seller"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Seller"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register"/>
+
+</LinearLayout>
